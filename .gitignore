@@ -20,3 +20,7 @@ vendor/
 # IDE files
 *.idea
 /vsc
+
+# compiled binaries
+twittervotes
+counter
