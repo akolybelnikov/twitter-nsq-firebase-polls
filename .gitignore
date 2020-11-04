@@ -19,7 +19,15 @@ vendor/
 
 # IDE files
 *.idea
+.vscode
 /vsc
 
 # compiled binaries
 /builds
+
+#frontend apps
+/frontend/apps/*/**/node_modules
+/frontend/apps/*/**/dist
+/frontend/libs/*/**/node_modules
+/frontend/libs/*/**/dist
+/frontend/node_modules
