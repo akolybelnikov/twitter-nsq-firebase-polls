@@ -9,7 +9,7 @@ paths:
     get:
       summary: Read all polls
       description: Show the list of all polls to the user
-      operationId: findPolls
+      operationId: readPolls
       responses:
         '200':
           description: polls response
@@ -101,12 +101,12 @@ components:
           - id
           properties:
             id:
-              type: integer
-              format: int64
+              type: string
               description: unique ID of the poll
     NewPoll:
       required:
         - title
+        - options
       properties:
         title: 
           type: string
@@ -115,6 +115,10 @@ components:
           type: array
           items: 
             type: string
+        results:
+          type: object
+        apikey:
+          type: string
     Error:
       required:
         - code
