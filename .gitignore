@@ -22,6 +22,4 @@ vendor/
 /vsc
 
 # compiled binaries
-twittervotes
-counter
-api
+/builds
