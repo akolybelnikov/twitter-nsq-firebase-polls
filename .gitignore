@@ -31,3 +31,7 @@ vendor/
 /frontend/libs/*/**/node_modules
 /frontend/libs/*/**/dist
 /frontend/node_modules
+
+# environment variables
+.env
+/*/**/.env

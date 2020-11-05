@@ -1,12 +1,20 @@
-import Vue from "vue";
-import App from "./App.vue";
-import store from "./store";
-import router from "./router";
+import 'primeicons/primeicons.css'
+import Button from 'primevue/button'
+import DataView from 'primevue/dataview'
+import InputText from 'primevue/inputtext'
+import 'primevue/resources/primevue.min.css'
+import 'primevue/resources/themes/saga-green/theme.css'
+import { createApp } from 'vue'
+import App from './App.vue'
+import router from './router'
+import store from './store'
 
-Vue.config.productionTip = false;
+const app = createApp(App)
 
-new Vue({
-  store,
-  router,
-  render: h => h(App)
-}).$mount("#app");
+app.component('InputText', InputText)
+app.component('Button', Button)
+app.component('DataView', DataView)
+
+app.use(store)
+    .use(router)
+    .mount('#app')
