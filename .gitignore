@@ -15,7 +15,7 @@
 vendor/
 
 # Config files
-*.json
+nsqgo-d2627-firebase-adminsdk-9o5e0-ffcf1f6356.json
 
 # IDE files
 *.idea
